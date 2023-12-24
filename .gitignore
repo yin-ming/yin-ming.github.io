@@ -1,4 +1,6 @@
 # Logs
+db.json
+package-lock.json
 public
 logs
 *.log
