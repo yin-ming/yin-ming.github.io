@@ -1,5 +1,5 @@
 ---
-title: 本杰明·富兰克林自传
+title: 本杰明·富兰克林自传 Autobiography of Benjamin Franklin
 date: 2019/1/13 20:46:25
 tags:
  - 传记

@@ -1,5 +1,5 @@
 ---
-title: 黑客与画家
+title: 黑客与画家 Hackers & Painters: Big Ideas from the Computer Age
 date: 2015/4/9
 tags:
  - 传记 
