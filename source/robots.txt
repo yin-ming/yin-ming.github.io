@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yinming.org/sitemap.xml
