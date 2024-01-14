@@ -1,5 +1,5 @@
 ---
-title: 数学：确定性的丧失 
+title: 数学：确定性的丧失 Matchmatics The Loss Of Certainty
 date: 2014/9/8
 tags:
  - 个人成长
