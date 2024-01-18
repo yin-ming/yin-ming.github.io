@@ -1,5 +1,5 @@
 ---
-title: 影响力 Influence: The Psychology of Persuasion
+title: 影响力 Influence： The Psychology of Persuasion
 date: 2012/12/17
 tags:
  - 个人成长

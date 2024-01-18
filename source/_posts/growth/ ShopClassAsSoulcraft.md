@@ -1,5 +1,5 @@
 ---
-title: 摩托车修理店未来工作哲学 Shop Class as Soulcraft: An Inquiry into the Value of Work 
+title: 摩托车修理店未来工作哲学 Shop Class as Soulcraft： An Inquiry into the Value of Work 
 date: 2015/3/11
 tags:
  - 个人成长
