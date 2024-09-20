@@ -1,5 +1,5 @@
 ---
-title: 浅薄 The Shallows: What the Internet Is Doing to Our Brains
+title: 浅薄 The Shallows - What the Internet Is Doing to Our Brains
 date: 2024/9/10
 tags:
  - 个人成长
