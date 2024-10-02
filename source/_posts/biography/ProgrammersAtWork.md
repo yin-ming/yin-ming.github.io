@@ -1,5 +1,5 @@
 ---
-title: 编程大师访谈录 Programmers at work: Interviews 
+title: 编程大师访谈录 Programmers at work- Interviews 
 date: 2012/12/16
 tags:
  - 传记

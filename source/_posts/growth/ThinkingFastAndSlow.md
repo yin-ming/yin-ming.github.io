@@ -1,5 +1,5 @@
 ---
-title: 思考，快与慢 Thinking: Fast and Slow
+title: 思考，快与慢 Thinking- Fast and Slow
 date: 2014/6/30
 tags:
  - 个人成长

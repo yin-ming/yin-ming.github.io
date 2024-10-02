@@ -43,28 +43,40 @@
 document.getElementById('editableDiv').addEventListener('keydown', function (e) {
       // 检测是否按下回车键 (Enter 键的 keyCode 是 13，或者可以使用 e.key)
       if (e.key === 'Enter') {
-        e.preventDefault();  // 阻止默认的回车行为（如插入换行）
 
         // 获取 div 中的内容
         const content = this.innerHTML;
 
         // 发送 POST 请求到远程接口
-        fetch('https://your-api-endpoint.com/api', {
+        fetch('https://lie.mohai.ren/daquan/api/ymnote', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({ content: content })
         })
-        .then(response => response.json())
-        .then(data => {
-          console.log('成功:', data);
-        })
         .catch((error) => {
           console.error('错误:', error);
         });
       }
     });
+  
+        fetch('https://lie.mohai.ren/daquan/api/ymnote', {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        })
+        .then(response => response.json())
+        .then(data => {
+          console.log('成功:', data);
+          // 将数据插入到可编辑区域
+          document.getElementById('editableDiv').innerHTML = data.content;
+        })
+        .catch((error) => {
+          console.error('错误:', error);
+        });
+
 </script>
 
 </body>

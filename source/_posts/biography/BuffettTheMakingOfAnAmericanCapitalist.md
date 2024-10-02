@@ -1,5 +1,5 @@
 ---
-title: 巴菲特传 Buffett: The Making of an American Capitalist
+title: 巴菲特传 Buffett- The Making of an American Capitalist
 date: 2012/12/17
 tags:
  - 传记
