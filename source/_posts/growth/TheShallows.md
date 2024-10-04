@@ -3,7 +3,6 @@ title: 浅薄 The Shallows - What the Internet Is Doing to Our Brains
 date: 2024/9/10
 tags:
  - 个人成长
- - 待整理
 ---
 
 英文书名: The Shallows: What the Internet Is Doing to Our Brains  
@@ -12,7 +11,7 @@ tags:
 中文书名的副标题有些夸张了, 其实全书在讨论互联网如何改变我们的大脑, 这些改变到底是有害,还是有利? 作者给出了他的观点.
 但无论如何,科技的发展始终是大趋势,我个人认为互联网的成就和当年古腾堡活字印刷术带来书籍的普及一样,进一步让知识和信息的传播更广更容易,利远大于弊. 这里用"毒害"这个字眼有些标题党了.
 
-相关的阅读: [娱乐至死](), [深度工作]()
+相关的阅读: [娱乐至死](), [深度工作](./DeepWork/)
 
 <!-- more -->
 
