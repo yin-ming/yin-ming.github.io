@@ -7,7 +7,7 @@ tags:
 
 目的：kindle书单的一本书，想看看如何提高效率
 
-相关阅读:[《浅薄》](/growth/TheShallows/) [《娱乐至死》《专注》《专注力》]()
+相关阅读:[《浅薄》](/growth/TheShallows/) [《娱乐至死》](/growth/AmusingOurselvesToDeath/)《专注》《专注力》
 
 简单说这本书就是在谈专注，专注的工作，就是深度工作。
 
