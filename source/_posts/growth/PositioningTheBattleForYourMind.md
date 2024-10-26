@@ -1,5 +1,5 @@
 ---
-title: 定位 Positioning:The Batthle For Your Mind 
+title: 定位 Positioning:The Battle For Your Mind 
 date: 2014/3/12
 tags:
  - 个人成长
