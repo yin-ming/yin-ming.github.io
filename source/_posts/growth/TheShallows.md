@@ -3,6 +3,7 @@ title: 浅薄 The Shallows - What the Internet Is Doing to Our Brains
 date: 2024/9/10
 tags:
  - 个人成长
+ - 习惯养成
 ---
 
 英文书名: The Shallows: What the Internet Is Doing to Our Brains  

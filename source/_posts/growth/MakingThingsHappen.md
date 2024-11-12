@@ -3,7 +3,6 @@ title: Making Things Happen
 date: 2012/12/17
 tags:
  - 项目管理
- - 待整理
 ---
 
 是本项目管理的书.

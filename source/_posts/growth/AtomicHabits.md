@@ -3,6 +3,7 @@ title: 原子习惯 Atomic Habits - An Easy & Proven Way to Build Good Habits & 
 date: 2021/3/31
 tags:
  - 个人成长
+ - 习惯养成
 ---
 
 我初看这本书，以为又是一本鸡汤书，因为开篇作者就在讲述自己励志逆袭的故事，算是标准鸡汤书的套路。
