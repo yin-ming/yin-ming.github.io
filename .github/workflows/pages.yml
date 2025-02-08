@@ -29,13 +29,9 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-      - name: set file permission
-        run: chmod -R a+rX ./public
-      - name: delete hard symbolic files
-        run: find ./public -type l -exec rm {} \;
       - uses: actions/upload-pages-artifact@v3
         with:
-          name: 'github-pages'
+          name: deploy pages
           path: ./public
 
   # Deploy job
@@ -45,8 +41,6 @@ jobs:
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
-      actions: read
-      contents: read
       pages: write      # to deploy to Pages
       id-token: write   # to verify the deployment originates from an appropriate source
 
