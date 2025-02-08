@@ -29,6 +29,8 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
+      - name: delete hard symbolic files
+        run: find ./public -type l -exec rm {} \;
       - uses: actions/upload-artifact@v4.6.0
         with:
           name: 'github-pages'
