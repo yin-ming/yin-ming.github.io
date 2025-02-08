@@ -29,6 +29,8 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
+      - name: set file permission
+        run: chmod -R a+rX ./public
       - name: delete hard symbolic files
         run: find ./public -type l -exec rm {} \;
       - uses: actions/upload-artifact@v4.6.0
