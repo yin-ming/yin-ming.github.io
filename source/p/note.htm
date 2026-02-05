@@ -1,102 +1,61 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Notes</title>
+  <title>Note</title>
   <style>
-    /* 确保 html 和 body 的高度为 100% */
-    html,
-    body {
+    html, body {
       margin: 0;
       padding: 0;
       height: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     }
 
-    /* 设置可编辑 div 占满整个窗口 */
-    #editableDiv {
+    #editor {
       width: 100%;
       height: 100%;
       box-sizing: border-box;
-      /* 确保 padding 不影响宽高 */
-      padding: 10px;
-      /* 添加一些内边距 */
-      border: 1px solid #ccc;
-      /* 可选，添加边框以便更容易看到 */
+      padding: 20px;
+      border: none;
       outline: none;
-      /* 移除点击时的默认边框 */
       overflow: auto;
-      /* 处理内容溢出 */
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    #editor:empty::before {
+      content: "Start typing... Press Enter to save.";
+      color: #999;
     }
   </style>
 </head>
-
 <body>
-  <div contenteditable="true" id="editableDiv">
-  </div>
+  <div contenteditable="true" id="editor"></div>
 
   <script>
-    document.getElementById('editableDiv').addEventListener('paste', function (e) {
-      // 阻止默认粘贴行为
+    const STORAGE_KEY = 'spa-note';
+    const editor = document.getElementById('editor');
+
+    // Load from localStorage on page load
+    const saved = localStorage.getItem(STORAGE_KEY);
+    if (saved) {
+      editor.innerHTML = saved;
+    }
+
+    // Strip formatting on paste
+    editor.addEventListener('paste', function(e) {
       e.preventDefault();
-
-      // 获取剪贴板中的纯文本内容
       const text = (e.clipboardData || window.clipboardData).getData('text');
-
-      // 将纯文本插入到可编辑区域
       document.execCommand('insertText', false, text);
     });
 
-    document.getElementById('editableDiv').addEventListener('keydown', function (e) {
-      // 检测是否按下回车键 (Enter 键的 keyCode 是 13，或者可以使用 e.key)
+    // Save on Enter key
+    editor.addEventListener('keydown', function(e) {
       if (e.key === 'Enter') {
-
-        // 获取 div 中的内容
-        const content = this.innerHTML;
-
-        //save to local storage
-        localStorage.setItem('ymnote', content);
-
-        // 发送 POST 请求到远程接口
-        fetch('https://lie.mohai.ren/daquan/api/ymnote', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({ content: content })
-        })
-          .catch((error) => {
-            console.error('错误:', error);
-          });
+        localStorage.setItem(STORAGE_KEY, editor.innerHTML);
       }
     });
-
-    fetch('https://lie.mohai.ren/daquan/api/ymnote', {
-      method: 'GET',
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    })
-      .then(response => response.json())
-      .then(data => {
-        console.log('成功:', data);
-        // 将数据插入到可编辑区域
-        if (data.content) {
-          document.getElementById('editableDiv').innerHTML = data.content;
-          //save to local storage
-          localStorage.setItem('ymnote', data.content);
-        } else {
-          //load from local storage
-          document.getElementById('editableDiv').innerHTML = localStorage.getItem('ymnote');
-        }
-      })
-      .catch((error) => {
-        console.error('错误:', error);
-      });
-
   </script>
-
 </body>
-
 </html>
