@@ -2,7 +2,7 @@
 title: Ten Years 十年 
 date: 2026/01/31
 tags:
- - blog 
+ - 碎碎念 
 ---
 
 这个周末把自己的域名做了断离舍，然后迁移到了Cloudflare上，同时在AI的帮助下做了“十年”的个人博客采集站。
